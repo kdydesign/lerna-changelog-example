@@ -3,5 +3,6 @@
 module.exports = template;
 
 function template() {
-    // TODO
+  // TODO
+  console.log('template log')
 }
