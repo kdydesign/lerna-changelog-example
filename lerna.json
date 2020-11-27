@@ -2,8 +2,8 @@
   "packages": [
     "packages/*"
   ],
-  "version": "0.0.0",
-  "useWorkspaces":  true,
+  "version": "0.1.0",
+  "useWorkspaces": true,
   "command": {
     "version": {
       "conventionalCommits": true,
@@ -48,7 +48,11 @@
         ],
         "issuePrefixes": [
           "#"
-        ]
+        ],
+        "issueUrlFormat": "{{host}}/{{owner}}/{{repository}}/issues/{{id}}",
+        "commitUrlFormat": "{{host}}/{{owner}}/{{repository}}/commit/{{hash}}",
+        "compareUrlFormat": "{{host}}/{{owner}}/{{repository}}/compare/{{previousTag}}...{{currentTag}}",
+        "userUrlFormat": "{{host}}/{{user}}"
       }
     },
     "publish": {
